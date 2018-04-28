@@ -1,0 +1,43 @@
+module.exports = {
+    html: `<div id="email" style="width: 75%;padding-top: 40px;padding-left: 20px;">
+        <div class="head-info">
+            <p class="name margin-btm-24" style="margin: 0;padding: 0;margin-bottom: 24px;font-size: 20px;font-weight: bold;">[尊敬的<span style="margin: 0;padding: 0;">[公司全称]</span>]您好！</p>
+            <p class="margin-btm-24" style="margin: 0;padding: 0;margin-bottom: 24px;">以下是您的电子对账单，请您查收并核对。如有异议，请您于收到对账单后 <span class="deadline" style="margin: 0;padding: 0;font-weight: bold;color: red;">3</span> 个自然日（收到对账单当日不计算）内予以邮件答复，逾期不提出异议视为认同。</p>
+
+        </div>
+
+        <div class="bill-info margin-btm-24" style="margin-bottom: 24px;">
+            <p class="title margin-btm-24" style="margin: 0;padding: 0;margin-bottom: 24px;font-size: 18px;font-weight: bold;"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTlweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMTkgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ5LjMgKDUxMTY3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT7otKbljZXkv6Hmga88L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i55S15a2Q5a+56LSm5Y2V6YKu5Lu2MSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjAwMDAwMCwgLTEzNC4wMDAwMDApIiBmaWxsPSIjQUJBRkI2Ij4KICAgICAgICAgICAgPGcgaWQ9Imxpc3QxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMC4wMDAwMDAsIDEzNC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMy4zMjQsOC45MjggQzEzLjYxNCw4LjkyOCAxMy44NDksOS4xNjMgMTMuODQ5LDkuNDUzIEMxMy44NDksOS43NDMgMTMuNjE0LDkuOTc4IDEzLjMyNCw5Ljk3OCBMMTAuNTA0LDkuOTc4IEwxMC41MDQsMTEuNTUzIEwxMy4zMjQsMTEuNTUzIEMxMy42MTQsMTEuNTUzIDEzLjg0OSwxMS43ODkgMTMuODQ5LDEyLjA3OSBDMTMuODQ5LDEyLjM2OSAxMy42MTQsMTIuNjA0IDEzLjMyNCwxMi42MDQgTDEwLjUwNCwxMi42MDQgTDEwLjUwNCwxNC4zNzQgQzEwLjUwNCwxNC42NjQgMTAuMjY4LDE0Ljg5OSA5Ljk3OCwxNC44OTkgQzkuNjg4LDE0Ljg5OSA5LjQ1MywxNC42NjQgOS40NTMsMTQuMzc0IEw5LjQ1MywxMi42MDQgTDcuMDIxLDEyLjYwNCBDNi43MzEsMTIuNjA0IDYuNDk2LDEyLjM2OSA2LjQ5NiwxMi4wNzkgQzYuNDk2LDExLjc4OSA2LjczMSwxMS41NTMgNy4wMjEsMTEuNTUzIEw5LjQ1MywxMS41NTMgTDkuNDUzLDkuOTc4IEw3LjAyMSw5Ljk3OCBDNi43MzEsOS45NzggNi40OTYsOS43NDMgNi40OTYsOS40NTMgQzYuNDk2LDkuMTYzIDYuNzMxLDguOTI4IDcuMDIxLDguOTI4IEw5LjI1OSw4LjkyOCBMNi40OTYsNi4yNDQgQzYuMzk5LDYuMTY1IDYuMzQyLDYuMDQ3IDYuMzQyLDUuOTIxIEM2LjM0Miw1Ljc5NiA2LjM5OSw1LjY3NyA2LjQ5Niw1LjU5OCBDNi43MDEsNS4zOTUgNy4wMzIsNS4zOTUgNy4yMzcsNS41OTggTDEwLjAxNSw4LjM3MSBMMTIuNzk5LDUuNTcyIEMxMy4wMDQsNS4zNjggMTMuMzM0LDUuMzY4IDEzLjUzOSw1LjU3MiBDMTMuNjM3LDUuNjYgMTMuNjkzLDUuNzg2IDEzLjY5Myw1LjkxOSBDMTMuNjkzLDYuMDUxIDEzLjYzNyw2LjE3NyAxMy41MzksNi4yNjUgTDEwLjc2MSw4Ljk0OSBMMTMuMzI0LDguOTQ5IEwxMy4zMjQsOC45MjggWiBNMTcsMCBMMy4zNDUsMCBDMi4xMTEsMC4wNzcgMS4xMjcsMS4wNiAxLjA1LDIuMjk1IEwxLjA1LDMuNDQgQzAuNDQzLDMuNjg5IDAuMDM0LDQuMjY1IDAsNC45MjEgQzAuMDM0LDUuNTc2IDAuNDQzLDYuMTUzIDEuMDUsNi40MDIgTDEuMDUsOC42OTcgQzAuNDQzLDguOTQ2IDAuMDM0LDkuNTIyIDAsMTAuMTc4IEMwLjAzNCwxMC44MzMgMC40NDMsMTEuNDEgMS4wNSwxMS42NTkgTDEuMDUsMTMuOTU0IEMwLjQ0MywxNC4yMDMgMC4wMzQsMTQuNzggMCwxNS40MzUgQzAuMDM0LDE2LjA5MSAwLjQ0MywxNi42NjcgMS4wNSwxNi45MTYgTDEuMDUsMTguMDUxIEMxLjA1LDE5LjIxMiAyLjE5LDE5Ljk1MiAzLjM1LDE5Ljk1MiBMMTcsMTkuOTUyIEMxNy41MTUsMTkuOTkgMTguMDIyLDE5LjgwMiAxOC4zODcsMTkuNDM3IEMxOC43NTQsMTkuMDcyIDE4Ljk0MywxOC41NjYgMTguOTA3LDE4LjA1MSBMMTguOTA3LDIuMjk1IEMxOC45MDcsMS4xMzQgMTguMTYxLDAgMTcsMCBaIiBpZD0i6LSm5Y2V5L+h5oGvIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" style="vertical-align: middle;margin-right: 7px;">账单信息</p>
+            <table style="width: 100%;box-shadow: 0 0 2px 0px lightgray;border-collapse: collapse;">
+                <tr>
+                    <td class="odd" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;width: 100px;background-color: #D1D9E9;">客户名称</td>
+                    <td class="even" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;color: #7A7A7A;">987</td>
+                    <td class="odd" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;width: 100px;background-color: #D1D9E9;">账单编号</td>
+                    <td class="even" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;color: #7A7A7A;">77777</td>
+                </tr>
+                <tr class="even" style="background-color: #F1F6FC;">
+                    <td class="odd" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;width: 100px;background-color: #D1D9E9;">账单周期</td>
+                    <td class="even" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;color: #7A7A7A;">2011至2015</td>
+                    <td class="odd" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;width: 100px;background-color: #D1D9E9;">到期还款日</td>
+                    <td class="even" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;color: #7A7A7A;">2018-7-31</td>
+                </tr>
+                <tr>
+                    <td class="odd" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;width: 100px;background-color: #D1D9E9;">本期账单金额</td>
+                    <td class="even" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;color: #7A7A7A;"><span class="bill-money" style="margin: 0;padding: 0;color: red;">20000</span>元</td>
+                    <td class="odd" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;width: 100px;background-color: #D1D9E9;"></td>
+                    <td class="even" style="border-radius: 3px;padding-left: 20px;padding-right: 20px;border: 1px solid lightgray;line-height: 40px;color: #7A7A7A;"></td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div class="operation">
+            <p class="margin-btm-24" style="margin: 0;padding: 0;margin-bottom: 24px;">确认账单或者提出异议请点击以下按钮，谢谢。</p>
+            <div class="margin-btm-24" style="margin-bottom: 24px;">
+                <a href="#" class="btn btn-sure margin-r-20" style="margin-right: 20px;padding: 8px 17px;text-decoration: none;font-size: 14px;border-radius: 5px;background-color: #367DFC;color: white;">确认账单</a>
+                <a href="#" class="btn btn-question" style="padding: 8px 17px;text-decoration: none;font-size: 14px;border-radius: 5px;background-color: white;border: 1px solid #B7B7B7;color: #B7B7B7;">提出异议</a>
+            </div>
+        </div>
+    </div>`
+}
